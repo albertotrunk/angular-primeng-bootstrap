@@ -1,1 +1,19 @@
-@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-weight: normal;
+  padding: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
