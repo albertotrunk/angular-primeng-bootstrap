@@ -24,7 +24,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Application Requirements
 1. The application should be self-contained, without requiring access to any backend.
 2. The only external data provider allowed is the provided JSON file.
-3. The application must have a login page with mock validation where
+3. The application must have a login page with mock validation "username"="admin" and "password"="root" where
    a. It returns an error if the username and password are not valid.
    b. It directs the user to the "welcome" page if the login is successful.
 4. The Welcome page must contain links to the following pages:
