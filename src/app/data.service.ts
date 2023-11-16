@@ -56,16 +56,7 @@ export class DataService {
   }
 
   private savePlanets(planets: any): void {
-    // Save the updated list of planets to the JSON file not necessary and will not work in local but...
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-      }),
-    };
-    this.http.put<void>(this.planetsUrl, planets, httpOptions).subscribe(
-      () => console.log('Planets saved successfully to JSON file'),
-      error => console.error('Error saving planets to JSON file:', error)
-    );
+    // Save the updated list of planets to the JSON file not necessary
   }
 
   private getStoredPlanets(): any {
