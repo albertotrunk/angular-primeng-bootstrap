@@ -1,0 +1,100 @@
+{
+  "column": [
+    {
+      "header": "Planet ID",
+      "field": "planetID"
+    },
+    {
+      "header": "Planet Name",
+      "field": "planetName"
+    },
+    {
+      "header": "Properties",
+      "subHeaders": [
+        {
+          "header": "Distance in m",
+          "field": "distance"
+        },
+        {
+          "header": "Mass in kg",
+          "field": "mass"
+        },
+        {
+          "header": "Radius in m",
+          "field": "radius"
+        },
+        {
+          "header": "Inclination of orbit",
+          "field": "inclination"
+        }
+      ]
+    },
+    { "header": "g on surface" }
+  ],
+  "data": [
+    {
+      "planetID": 1,
+      "planetName": "Mercury",
+      "distance": 5.79e10,
+      "mass": 3.3e23,
+      "radius": 2.439e6,
+      "inclination": 7
+    },
+    {
+      "planetID": 2,
+      "planetName": "Venus",
+      "distance": 1.082e11,
+      "mass": 4.87e24,
+      "radius": 6.052e6,
+      "inclination": 3.4
+    },
+    {
+      "planetID": 3,
+      "planetName": "Earth",
+      "distance": 1.496e11,
+      "mass": 5.97e24,
+      "radius": 6.378e6,
+      "inclination": 0
+    },
+    {
+      "planetID": 4,
+      "planetName": "Mars",
+      "distance": 2.28e11,
+      "mass": 6.42e23,
+      "radius": 3.396e6,
+      "inclination": 1.8
+    },
+    {
+      "planetID": 5,
+      "planetName": "Jupiter",
+      "distance": 7.785e11,
+      "mass": 1.898e27,
+      "radius": 7.1492e7,
+      "inclination": 1.3
+    },
+    {
+      "planetID": 6,
+      "planetName": "Saturn",
+      "distance": 1.433e12,
+      "mass": 5.68e26,
+      "radius": 6.0268e7,
+      "inclination": 2.5
+    },
+    {
+      "planetID": 7,
+      "planetName": "Uranus",
+      "distance": 2.867e12,
+      "mass": 8.68e25,
+      "radius": 2.5559e7,
+      "inclination": 0.8
+    },
+    {
+      "planetID": 8,
+      "planetName": "Neptune",
+      "distance": 4.515e12,
+      "mass": 1.02e26,
+      "radius": 2.4764e7,
+      "inclination": 1.8
+    }
+  ]
+}

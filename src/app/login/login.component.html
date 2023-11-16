@@ -1,0 +1,19 @@
+<!-- login.component.html -->
+<p-card header="Login">
+  <div class="flex flex-column gap-2">
+    <label htmlFor="username">Username</label>
+    <input pInputText id="username" aria-describedby="username-help" [(ngModel)]="username" class="py-1" />
+    <small id="username-help">Enter your username.</small>
+  </div>
+  <br>
+  <div class="flex flex-column gap-2">
+    <label htmlFor="password">Password</label>
+    <input pPassword id="password" aria-describedby="password-help" [(ngModel)]="password" class="py-1" />
+    <small id="password-help">Enter your password.</small>
+  </div>
+  <br>
+  <p-button label="Login" (onClick)="login()" class="mt-2"></p-button>
+  <!-- p-messages component to display the error message -->
+  <p-messages></p-messages>
+</p-card>
+
