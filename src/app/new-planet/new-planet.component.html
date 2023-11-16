@@ -1,42 +1,46 @@
 <!-- new-planet.component.html -->
-<h1>NEW PLANET FORM</h1>
-<form *ngIf="planetForm" [formGroup]="planetForm" (ngSubmit)="onSubmit()" class="row g-3">
-  <!-- Form fields go here -->
-  <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('planetName')?.invalid}">
-    <label for="planetName" class="form-label">Planet Name:</label>
-    <input type="text" id="planetName" formControlName="planetName" class="form-control" />
-    <div *ngIf="submitted && planetForm.get('planetName')?.hasError('required')" class="form-text text-danger">Planet Name is required.</div>
-    <div *ngIf="submitted && planetForm.get('planetName')?.hasError('maxlength')" class="form-text text-danger">Planet Name must not exceed 20 characters.</div>
-  </div>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    <h1>NEW PLANET FORM</h1>
+      <form *ngIf="planetForm" [formGroup]="planetForm" (ngSubmit)="onSubmit()" class="row g-3">
+        <!-- Form fields go here -->
+        <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('planetName')?.invalid}">
+          <label for="planetName" class="form-label">Planet Name:</label>
+          <input type="text" id="planetName" formControlName="planetName" class="form-control" />
+          <div *ngIf="submitted && planetForm.get('planetName')?.hasError('required')" class="form-text text-danger">Planet Name is required.</div>
+          <div *ngIf="submitted && planetForm.get('planetName')?.hasError('maxlength')" class="form-text text-danger">Planet Name must not exceed 20 characters.</div>
+        </div>
 
-  <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('distance')?.invalid}">
-    <label for="distance" class="form-label">Distance (m):</label>
-    <input pInputText pKeyFilter="money" id="distance" formControlName="distance" class="form-control"  />
-    <div *ngIf="submitted && planetForm.get('distance')?.hasError('required')" class="form-text text-danger">Distance is required.</div>
-  </div>
+        <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('distance')?.invalid}">
+          <label for="distance" class="form-label">Distance (m):</label>
+          <input pInputText pKeyFilter="money" id="distance" formControlName="distance" class="form-control"  />
+          <div *ngIf="submitted && planetForm.get('distance')?.hasError('required')" class="form-text text-danger">Distance is required.</div>
+        </div>
 
-  <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('mass')?.invalid}">
-    <label for="mass" class="form-label">Mass (kg):</label>
-    <input pInputText pKeyFilter="money" id="mass" formControlName="mass" class="form-control" />
-    <div *ngIf="submitted && planetForm.get('mass')?.hasError('required')" class="form-text text-danger">Mass is required.</div>
-  </div>
+        <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('mass')?.invalid}">
+          <label for="mass" class="form-label">Mass (kg):</label>
+          <input pInputText pKeyFilter="money" id="mass" formControlName="mass" class="form-control" />
+          <div *ngIf="submitted && planetForm.get('mass')?.hasError('required')" class="form-text text-danger">Mass is required.</div>
+        </div>
 
-  <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('radius')?.invalid}">
-    <label for="radius" class="form-label">Radius (m):</label>
-    <input pInputText pKeyFilter="money" id="radius" formControlName="radius" class="form-control" />
-    <div *ngIf="submitted && planetForm.get('radius')?.hasError('required')" class="form-text text-danger">Radius is required.</div>
-  </div>
+        <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('radius')?.invalid}">
+          <label for="radius" class="form-label">Radius (m):</label>
+          <input pInputText pKeyFilter="money" id="radius" formControlName="radius" class="form-control" />
+          <div *ngIf="submitted && planetForm.get('radius')?.hasError('required')" class="form-text text-danger">Radius is required.</div>
+        </div>
 
-  <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('inclination')?.invalid}">
-    <label for="inclination" class="form-label">Inclination:</label>
-    <input pInputText pKeyFilter="num" id="inclination" formControlName="inclination" class="form-control" />
-    <div *ngIf="submitted && planetForm.get('inclination')?.hasError('required')" class="form-text text-danger">Inclination is required.</div>
-  </div>
+        <div class="col-md-6" [ngClass]="{'has-error': submitted && planetForm.get('inclination')?.invalid}">
+          <label for="inclination" class="form-label">Inclination:</label>
+          <input pInputText pKeyFilter="num" id="inclination" formControlName="inclination" class="form-control" />
+          <div *ngIf="submitted && planetForm.get('inclination')?.hasError('required')" class="form-text text-danger">Inclination is required.</div>
+        </div>
 
   <!-- Validation messages go here -->
 
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="button" (click)="clearForm()" class="btn btn-secondary">Clear</button>
-  </div>
-</form>
+        <div class="col-12 mt-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" (click)="clearForm()" class="btn btn-secondary">Clear</button>
+        </div>
+      </form>
+    </div>
+</div>
