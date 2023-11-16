@@ -13,7 +13,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Prerequisites
 - Use Angular 16.x+
 - Use UTF-8 character encoding
-- Use the provided JSON file for data source ([planets.json](\src\assets\planets.json))
+- Use the provided JSON file for data source ([planets.json](https://github.com/albertotrunk/angular-primeng-bootstrap/blob/master/src/assets/planets.json))
 - You may use the PrimeNG library ([PrimeNG](https://primefaces.org/primeng/))
 - You may use Bootstrap 5.x ([Bootstrap](https://getbootstrap.com/))
 - The application must be a Single Page Application
